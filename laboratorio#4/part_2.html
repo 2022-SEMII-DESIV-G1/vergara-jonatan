@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio#4</title>
+</head>
+<body>
+    <div class="container" style="align-items: center;">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="user" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+    
+        <button type="submit" onclick="salsa()">Login</button>
+
+        <script>
+            function salsa() {
+                var x = document.getElementById("user").value;
+                console.log("user: " + x);
+                var y = document.getElementById("password").value;
+                console.log("password: " + y);
+            }
+        </script>
+    </div>
+</body>
+</html>
