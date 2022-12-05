@@ -1,0 +1,26 @@
+body{
+   background-color: rgb(50, 50,50);
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section{
+   width: 600px;
+   height: 750px;
+   background-color: white;
+}
+h1{
+   margin-top: 10px;
+   height: 20px;
+}
+span{
+   border-radius: 5px 5px 5px 5px;
+   font-size: large;
+   margin: 5px;
+   padding: 2px;
+   background-color: #93BEC0;
+}
+script{
+   height: 540px;
+}

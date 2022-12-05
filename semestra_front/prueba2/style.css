@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    width: 600px;
+    height: 750px;
+    background-color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1,
+h3 {
+    margin-top: 10px;
+    height: 20px;
+}
+
+footer {
+    height: 15px;
+    font-size: small;
+    color: #4C878A;
+}
+
+span {
+    border-radius: 5px 5px 5px 5px;
+    font-size: large;
+    margin: 5px;
+    padding: 2px;
+    background-color: #93BEC0;
+}
+
+#pyramid {
+    height: 540px;
+}
+
+#bx_btn {
+    height: 50px;
+}
+
+.lvl {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: large;
+    border-style: none;
+    background-color: rgb(30, 100, 100);
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    height: 40px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 170, 170);
+    color: black;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+}
+
+.route {
+    background-color: #FFAAAA;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
