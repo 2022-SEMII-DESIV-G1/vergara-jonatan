@@ -1,0 +1,96 @@
+body{
+   background-image: url(jeroclifico.jpg);
+   background-size: cover;
+   font-family: 'DM Sans', sans-serif;
+   padding-bottom: 0%;
+}
+
+h1{
+   font-family: 'Syne', sans-serif;
+   color: white; 
+}
+
+.contenedor{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   padding-bottom: 0%;
+}
+
+#pyramid-form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   padding-bottom: 15px ;
+ 
+}
+
+.digitar{
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   width: 100%;
+}
+
+#digitar-inpt{
+   margin:10px 0px;
+   width: 110%;
+   height: 20px;
+   border-radius: 5px;
+   box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+}
+
+#ordenar-btn{
+   width: 50%;
+   height: 30px;
+   border-radius: 5px;
+  
+}
+
+#ordenar-btn:hover{
+   box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+   cursor: pointer;
+   width: 55%;
+   height: 35px;
+   background-color: antiquewhite;
+}
+ul{
+   padding-top: 0%;
+   padding-bottom: 0%;
+   list-style: none;
+}
+li{
+   color: white;
+   display: flex;
+   justify-content:center;
+   justify-items: center;
+   font-size: 20px
+   
+   
+}
+a{
+   color: red;
+   background-color: grey;
+   font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-items:baseline
+   align-items: center;
+   padding-top: 0;
+}
+div{
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   padding-top: 0;
+   padding-bottom: 0%;
+}

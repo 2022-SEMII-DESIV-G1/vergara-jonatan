@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail</title>
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <div class = "result">
+
+  </div>
+  <div class="response">
+  </div>
+  <button id="back" onclick=location.href="inicio.html" type="button">ATRAS</button>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    (async ()=>{
+      const response = document.querySelector('.response');
+      const urlParams = new URLSearchParams(window.location.search);
+      const { data } = await axios.get(`http://localhost:4567/pyramids/${urlParams.get("q")}`);
+      response.innerHTML = JSON.stringify(data);
+    })()
+  </script>
+</body>
+</html>
