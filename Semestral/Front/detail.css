@@ -1,0 +1,34 @@
+body{
+    background-image: url(baseDeLasPiramideBW.jpg);
+    background-size: cover;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   padding-top: 200px;
+ }
+  .response{
+    font-size: 30px;
+    color: aqua;
+    background-color: grey;
+    background-size: contain;
+    text-align: center;
+  }
+
+  button{
+    display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   width: 20%;
+   height: 30px;
+   border-radius: 5px;
+  }
+
+  #back{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+ }

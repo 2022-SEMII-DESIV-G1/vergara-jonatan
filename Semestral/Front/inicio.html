@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio.css">
+   <script src="./inicio.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <form id ="pyramid-form" action="">
+            <h1>¡Ordenemos la Piramide!</h1>
+            <div class="cargar">
+                <input id="digitar-inpt" type="text">
+            </div>
+            <button id="ordenar-btn" type="submit" onclick="ordenarPiramide();">Ordenar</button>
+        </form>    
+    </div>
+    <div class="pyramids"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const pyramids = document.querySelector('.pyramids');
+        const form = document.querySelector('#pyramid-form');
+        const ruta = document.querySelector('#digitar-inpt');
+        const render = (pyramidResponse) =>
+        {
+            let newList = '<ul>';
+            for(const pyramid of pyramidResponse)
+            {
+                newList += `<li><a href="detail.html?q=${pyramid.id}">Piramide No (${pyramid.id})</a></li>`;
+            }
+            newList += '</ul>';
+            pyramids.innerHTML = newList;
+        };
+        
+        (async ()=>
+        {
+            const {data} = await axios.get('http://localhost:4567/pyramids');
+            render(data.pyramids);
+        });
+    </script>
+</body>
+</html>
